@@ -1,18 +1,18 @@
 # DockerMultiCaserez
 Este repositorio contiene una aplicación web construida con SvelteKit, que ha sido dockerizada utilizando un Dockerfile multistage. A continuación, se describen los pasos para configurar, construir y ejecutar la aplicación en un entorno Docker.
 
-#Prerrequisitos:
+# Prerrequisitos:
 Docker instalado en tu máquina.
 Node.js y npm instalados para la configuración inicial del proyecto SvelteKit.
 Configuración del Proyecto SvelteKit
 Crear un nuevo proyecto SvelteKit:
 
-#Ejecuta el siguiente comando en tu terminal para crear un nuevo proyecto SvelteKit:
+# Ejecuta el siguiente comando en tu terminal para crear un nuevo proyecto SvelteKit:
 
 npm create svelte@latest my-svelte-app
 Sigue las instrucciones interactivas para configurar el proyecto, eligiendo las opciones que mejor se adapten a tus necesidades (puedes optar por usar TypeScript, ESLint, Prettier, etc.).
 
-#Instalar dependencias:
+# Instalar dependencias:
 
 Una vez creado el proyecto, navega al directorio del proyecto e instala las dependencias necesarias:
 
@@ -35,7 +35,7 @@ Para construir la imagen Docker de la aplicación, asegúrate de estar en el dir
 
 docker build -t sveltekit-app .
 
-#Ejecución de la Imagen Docker:
+# Ejecución de la Imagen Docker:
 Una vez construida la imagen, puedes ejecutar un contenedor utilizando el siguiente comando:
 
 docker run -p 80:80 sveltekit-app
